@@ -1,0 +1,63 @@
+
+
+html,body,div,span,applet,object,h1,h2,h3,h4,h5,h6,p,iframe,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
+:focus { outline:0; }
+
+body { 
+	/*font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;*/
+        font:normal 100%/1.5 Helvetica, Arial, sans-serif;
+	/*letter-spacing:0;
+	color:#434343;
+	background:#efefef url(../img/background.png) repeat top center;
+	padding:20px 0;
+	position:relative;
+	text-shadow:0 1px 0 rgba(255,255,255,.8);
+	-webkit-font-smoothing: subpixel-antialiased;
+        */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	Anchors
+*/
+
+a:link,a:visited {
+	color:#000000;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#000000;
+	text-decoration:underline;
+}
+
+
+h1 {
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-family: Helvetica,Arial;
+    font-weight: bold;
+    line-height: 1.1em;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+h2{
+    font-size: 22px;   
+}
