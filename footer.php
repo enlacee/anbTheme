@@ -9,8 +9,8 @@
 
                 <!-- Menu Footer -->
                 <?php
-                wp_nav_menu(array('theme_location' => 'MenuFooter',
-                    'container' => 'false'));
+                //wp_nav_menu(array('theme_location' => 'MenuFooter',
+                //    'container' => 'false'));
                 ?>
                 <!-- Final Menu Footer -->
 
