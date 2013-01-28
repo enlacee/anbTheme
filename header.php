@@ -1,34 +1,15 @@
-<!DOCTYPE HTML>
-<html <?php language_attributes(); ?>>
-    <head>
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<head>
 
         <!-- METAS -->
         <meta charset="<?php bloginfo('charset'); //cambiamos <meta charset="utf-8"> por su            ?>" />
         <!-- /METAS -->
 
-        <title><?php
-/* Con este código agregamos a wordpress un titulo que cambia dependiendo 
- * del lugar donde te encuentres en el blog. También puede utilizar <?php bloginfo('name'); ?>
- * Muestra en la etiqueta <title> el nombre de lo que esta viendo, la forma en la que lo estamos creando
- * es mucho más amigable para los navegadores ya que muestra información de cada lugar que estés.
- */
-global $page, $paged;
-
-wp_title('|', true, 'right');
-
-// Agrega el nombre del blog.
-bloginfo('name');
-
-// Agrega la descripción del blog, en la página principal.
-$site_description = get_bloginfo('description', 'display');
-if ($site_description && ( is_home() || is_front_page() ))
-    echo " | $site_description";
-
-// Agrega el número de página si es necesario:
-if ($paged >= 2 || $page >= 2)
-    echo ' | ' . sprintf(__('Page %s', 'twentyten'), max($paged, $page));
-?>
-        </title>
+        <title><?php wp_title('&#124;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
         <!-- CSS anibal -->
         <link href='<?php bloginfo('template_url'); ?><?php echo "/css/main.css"; ?>' rel="stylesheet" />
         <link href='<?php bloginfo('stylesheet_url'); ?>' rel="stylesheet" />
